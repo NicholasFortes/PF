@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/tela_func.css">
+    <title>Acompanhamento Semanal</title>
+</head>
+    <main class="container">
+        <header id="cabecalho">
+            <h1>Acompanhamento Semanal - Compasso</h1>
+            <h2>Olá Compassiano(a)!!</h2> <br>
+            <p>Obrigado por participar do nosso processo de acompanhamento semanal, é muito importante sabermos como anda o sentimento da nossa equipe!
+            </p>
+        </header>
+    </main>
+        <body>
+            <div class="container">
+                <form name="form1" method="post" onSubmit="return validacao()">
+                    <p id="msguser"> Olá User, quando enviar este formulário, o seu nome e endereço de email serão exibidos para o proprietário do formulário.</p>
+                    Elementos com <span class="asterisco">*</span> são obrigatórios
+                    <div id="p1">
+                        <p id="pergunta1">1. Como você está se sentindo essa semana?<span class="asterisco">*</span></p>
+                        <img class="carinha" value="satis" id="feliz" src="img/feliz.png">
+                        <label>
+                            <input id="input1" value="inputRadio" type="radio" name="satisfacao" onclick="change1()">
+                        </label>
+                        <img class="carinha" value="satis" id="normal" src="img/normal.png">
+                        <label>
+                            <input id="input2" value="inputRadio" type="radio" name="satisfacao" onclick="change2()">
+                        </label>
+                        <img class="carinha" value="satis" id="triste" src="img/triste.png">
+                        <label>
+                            <input id="input3" value="inputRadio" type="radio" name="satisfacao" onclick="change3()">
+                        </label>
+                    </div>
+                    <fieldset>
+                        <p id="p2">2. O sentimento preenchido é em relação a motivos:<span class="asterisco">*</span></p>
+                        <label>
+                            <input id="input4" type="radio" name="motivo" value="pessoais">
+                            Pessoais
+                        </label>
+                        <label>
+                            <input id="input5" type="radio" name="motivo" value="profissionais">
+                            Profissionais
+                        </label>
+                        <label>
+                            <input id="input6" type="radio" name="motivo" value="ambos">
+                            Ambos
+                        </label>
+                        <p id="p3">
+                            3. Comentar: <br>
+                            <textarea maxlength="4000" name="" id="com" cols="100" rows="5"></textarea>
+                        </p>
+                        <button id="botaoSubmit" onclick="validacao(event)">Submit</button>
+                    </fieldset>
+                </form>
+            </div>    
+        </div>
+    </body>
+<script src="js/carinhas.js"></script>
+<script src="js/validacao.js"></script>
+</html>
