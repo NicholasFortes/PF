@@ -4,8 +4,7 @@ function loginAdm(){
     if(passAdm == "pass"){
         window.location="tela_adm.html"
     }else{
-        var ul = document.querySelector("#ul")
-        ul.innerHTML("erro")
+        alert("Senha Incorreta!")
     }
 }
 
