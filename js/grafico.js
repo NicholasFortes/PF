@@ -15,7 +15,10 @@ function drawChart() {
 
     var options = {'title':'Acompanhamento Semanal',
                     'width':400,
-                    'height':300};
+                    'height':300,
+                    backgroundColor: 'transparent',
+                    legend:{textStyle:{color:'white'}},
+                    titleTextStyle: {color: 'white'}};
 
     var chart = new google.visualization.PieChart(document.getElementById('chart_div'));
     chart.draw(data, options);
