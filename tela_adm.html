@@ -1,101 +1,172 @@
-
-<!DOCTYPE html>
+﻿'<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/tela_adm.css">
-    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-    <script type="text/javascript" src="js/grafico.js"></script>   
+    <link rel="stylesheet" href="css/tela_adm.css">   
     <title>Administrador</title> 
 </head>
-<body>
-    <header>
-        <h1 class="container">Controle de dados - Acompanhamento Semanal</h1>
+    <header class="container cabecalho">
+        <h1>Controle de dados - Acompanhamento Semanal</h1>
     </header>
-    <div id="chart_div"></div>
-    
-    <input type="text" id="inputFiltro" onkeyup="filter()"/>
-
-    <table id="tabela">
-        <thead>
-            <tr>
-                <th>Período</th>
-                <th>Gestor</th>
-                <th>Nome</th>
-                <th>Sede</th>
-                <th>Cliente</th>
-                <th>Email</th>
-                <th>Status</th>
-                <th>Satisfação Pessoal</th>
-                <th>Satisfação Profissional</th>
-                <th>Comentário</th>
-                <th>Solução</th>
-                <th>Data de submissão</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr class="dados">
-                <td>01/01/2019 - 08/01/2019</td>
-                <td>Martim Ribeiro</td>
-                <td class="dado-nome">Lucas Azevedo</td>
-                <td>Passo Fundo - RS</td>
-                <td>FYI</td>
-                <td>martimr@gmail.com</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr class="dados">
-                <td>08/01/2019 - 15/01/2019</td>
-                <td>Vitor Costa</td>
-                <td class="dado-nome">Nicolas Melo</td>
-                <td>Porto Alegre - RS</td>
-                <td>Off Premium</td>
-                <td>vitorc@gmail.com</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr class="dados">
-                <td>15/01/2019 - 22/01/2019</td>
-                <td>Miguel Almeida</td>
-                <td class="dado-nome">Rodrigo Carvalho</td>
-                <td>Passo Fundo - RS</td>
-                <td>Bob Store</td>
-                <td>miguela@gmail.com</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr class="dados">
-                <td>22/01/2019 - 29/01/2019</td>
-                <td>Bruno Goncalves</td>
-                <td class="dado-nome">Fábio Dias</td>
-                <td>São Paulo - SP</td>
-                <td>Salinas</td>
-                <td>brunog@gmail.com</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-        </tbody>
-    </table>
-
-    <script src="js/filtrar.js"></script>
+    <body class="container">
+	<div class="row">
+		<div class="col-4">
+			<div id="chart_div"></div>
+		</div>
+		<div class="col-4">
+			<div id="chart_div1"></div>
+		</div>
+		<div class="col-4">
+			<div id="chart_div2"></div>
+		</div>
+    </div>
+    <div class="row">
+        <div class="filtro">
+                <button type="button" class="btn btn-primary filtrobotao">Filtrar</button>
+            <input type="text" class="input" id="inputFiltro" onkeyup="filter()"/>
+        </div>
+    </div> 
+    <div class="row">
+        <div class="divcheckboxes invisivel">
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="Gestor" id="checkGestor">
+            <label class="form-check-label labelcheckbox" for="checkGestor">Gestor</label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="Nome" id="checkNome">
+            <label class="form-check-label labelcheckbox" for="checkNome">Nome</label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="Sede" id="checkSede">
+            <label class="form-check-label labelcheckbox" for="checkSede">Sede</label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="Cliente" id="checkCliente">
+            <label class="form-check-label labelcheckbox" for="checkCliente">Cliente</label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="Email" id="checkEmail">
+            <label class="form-check-label labelcheckbox" for="checkEmail">Email</label>
+        </div>
+        </div>
+        <div class="divtabela container">
+            <table class="table table-responsive table-bordered" id="tabela">
+                <thead >
+                    <!-- <tr>
+                        <th>Período</th>
+                        <th>Gestor</th>
+                        <th>Nome</th>
+                        <th>Sede</th>
+                        <th>Cliente</th>
+                        <th>Email</th>
+                        <th>Status</th>
+                        <th>Satisfação Pessoal</th>
+                        <th>Satisfação Profissional</th>
+                        <th>Comentário</th>
+                        <th>Solução</th>
+                        <th>Data de submissão</th>
+                    </tr> -->
+                </thead>
+                <tbody class="invisivel">
+                    <tr class="thead-dark">
+                        <th>Período</th>
+                        <th>Gestor</th>
+                        <th>Nome</th>
+                        <th>Sede</th>
+                        <th>Cliente</th>
+                        <th>Email</th>
+                        <th>Status</th>
+                        <th>Satisfação Pessoal</th>
+                        <th>Satisfação Profissional</th>
+                        <th>Comentário</th>
+                        <th>Solução</th>
+                        <th>Data de submissão</th>
+                    </tr>
+                    <tr class="dados">
+                        <td class="dado-periodo"></td>
+                        <td class="dado-gestor"></td>
+                        <td class="dado-nome"></td>
+                        <td class="dado-sede"></td>
+                        <td class="dado-cliente"></td>
+                        <td class="dado-email"></td>
+                        <td class="dado-status"></td>
+                        <td class="dado-satisPess"></td>
+                        <td class="dado-satisProf"></td>
+                        <td class="dado-comentario"></td>
+                        <td class="dado-solucao"></td>
+                        <td class="dado-dataSub"></td>
+                    </tr>
+                    <tr class="dados">
+                        <td class="dado-periodo"></td>
+                        <td class="dado-gestor"></td>
+                        <td class="dado-nome"></td>
+                        <td class="dado-sede"></td>
+                        <td class="dado-cliente"></td>
+                        <td class="dado-email"></td>
+                        <td class="dado-status"></td>
+                        <td class="dado-satisPess"></td>
+                        <td class="dado-satisProf"></td>
+                        <td class="dado-comentario"></td>
+                        <td class="dado-solucao"></td>
+                        <td class="dado-dataSub"></td>
+                    </tr>
+                    <tr class="dados">
+                        <td class="dado-periodo"></td>
+                        <td class="dado-gestor"></td>
+                        <td class="dado-nome"></td>
+                        <td class="dado-sede"></td>
+                        <td class="dado-cliente"></td>
+                        <td class="dado-email"></td>
+                        <td class="dado-status"></td>
+                        <td class="dado-satisPess"></td>
+                        <td class="dado-satisProf"></td>
+                        <td class="dado-comentario"></td>
+                        <td class="dado-solucao"></td>
+                        <td class="dado-dataSub"></td>
+                    </tr>
+                    <tr class="dados">
+                        <td class="dado-periodo"></td>
+                        <td class="dado-gestor"></td>
+                        <td class="dado-nome"></td>
+                        <td class="dado-sede"></td>
+                        <td class="dado-cliente"></td>
+                        <td class="dado-email"></td>
+                        <td class="dado-status"></td>
+                        <td class="dado-satisPess"></td>
+                        <td class="dado-satisProf"></td>
+                        <td class="dado-comentario"></td>
+                        <td class="dado-solucao"></td>
+                        <td class="dado-dataSub"></td>
+                    </tr>
+                    <tr class="dados">
+                        <td class="dado-periodo"></td>
+                        <td class="dado-gestor"></td>
+                        <td class="dado-nome"></td>
+                        <td class="dado-sede"></td>
+                        <td class="dado-cliente"></td>
+                        <td class="dado-email"></td>
+                        <td class="dado-status"></td>
+                        <td class="dado-satisPess"></td>
+                        <td class="dado-satisProf"></td>
+                        <td class="dado-comentario"></td>
+                        <td class="dado-solucao"></td>
+                        <td class="dado-dataSub"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        </div>
+	</div>
+    <script type="text/javascript" src="js/filtrar.js"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript" src="js/grafico.js"></script>
+    <script type="text/javascript" src="js/FiltroCheck.js"></script>
+    <script type="text/javascript" src="js/tableVisible.js"></script>
+    <script type="text/javascript" src="js/filtroEspecifico.js"></script>
+    <script type="text/javascript" src="js/filtrar2.js"></script>
+    <script type="text/javascript" src="js/renderJson.js"></script>
 </body>
 </html>

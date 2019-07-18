@@ -56,6 +56,22 @@ position: relative;
 right: 19.2%;
 }
 
+#botaoSubmit{
+    color: #fff;
+    background-color: #007bff;
+    border-color: #007bff;
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    vertical-align: middle;
+    user-select: none;
+    border: 1px solid transparent;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+}
+
 @media(min-width: 768px){
     .responsivo{
     width: 75%;
