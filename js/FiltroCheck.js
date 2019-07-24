@@ -2,19 +2,74 @@ var checkbox=document.querySelector('.divcheckboxes');
 var tabela=document.querySelector('.divtabela');
 var button=document.querySelector('.filtrobotao');
 button.addEventListener("click",function(event){
-    var visibilidade = checkbox.classList.contains("invisivel");
-    if (visibilidade==true){
-        checkbox.classList.add("visivel","col-1");
-        checkbox.classList.remove("invisivel");
-        tabela.classList.add("col-11");
-    }
-    else{
-        checkbox.classList.remove("visivel","col-1");
-        checkbox.classList.add("invisivel");
-        tabela.classList.remove("col-11");
-    }
+    checkSize(window.innerWidth,checkbox,tabela);
     event.preventDefault();
 });
+
+function checkSize(size,checkbox,tabela){
+    var visivel = checkbox.classList.contains("invisivel");
+    if (size<=576){
+        if (visivel){
+            checkbox.classList.add("visivel","col-2");
+            checkbox.classList.remove("invisivel");
+            tabela.classList.add("col-10");
+        }
+        else{
+            checkbox.classList.remove("visivel","col-2","col-1");
+            checkbox.classList.add("invisivel");
+            tabela.classList.remove("col-10","col-11");
+        }
+    }   
+    else if (size<=768){
+        if (visivel){
+            checkbox.classList.add("visivel","col-2");
+            checkbox.classList.remove("invisivel");
+            tabela.classList.add("col-10");
+        }
+        else{
+            checkbox.classList.remove("visivel","col-2","col-1");
+            checkbox.classList.add("invisivel");
+            tabela.classList.remove("col-10","col-11");
+        }
+    }
+    else if (size<=992){
+        if(visivel){
+            checkbox.classList.add("visivel","col-1");
+            checkbox.classList.remove("invisivel");
+            tabela.classList.add("col-11");
+        }
+        else{
+            checkbox.classList.remove("visivel","col-2","col-1");
+            checkbox.classList.add("invisivel");
+            tabela.classList.remove("col-10","col-11");
+        }
+    }
+    else if (size<=1200){
+        if (visivel){
+            checkbox.classList.add("visivel","col-1");
+            checkbox.classList.remove("invisivel");
+            tabela.classList.add("col-11");
+        }
+        else{
+            checkbox.classList.remove("visivel","col-2","col-1");
+            checkbox.classList.add("invisivel");
+            tabela.classList.remove("col-10","col-11");
+        }
+    }
+    else{
+        if (visivel){
+            checkbox.classList.add("visivel","col-1");
+            checkbox.classList.remove("invisivel");
+            tabela.classList.add("col-11");
+        }
+        else{
+            checkbox.classList.remove("visivel","col-2","col-1");
+            checkbox.classList.add("invisivel");
+            tabela.classList.remove("col-10","col-11");
+        }
+    }
+}
+
     
     
     

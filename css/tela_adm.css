@@ -1,5 +1,5 @@
 header,body{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica,sans-serif;
 }
 body{
     background-color: #142f51;
@@ -7,19 +7,29 @@ body{
     background-attachment: fixed;
     background-size: cover;
 }
+.divtabela{
+    overflow: auto; 
+    width: 100%;
+}
 #tabela{
     color: white;
     text-align: center;
+    font-size: 75%;
 }
-
+.table-dark{
+    background: rgba(34,84,168, 0.3);
+}
+.table thead th {
+    border-bottom: 1px solid #454d55;
+    background: rgba(34,84,168, 0.5);   
+    border-top: 0px solid #dee2e6;
+}
 .invisivel{
     display:none;
 }
 .visivel{
     display: block;
 }
-
-
 .cabecalho{
     text-align: center;
     color: white;
@@ -30,53 +40,149 @@ body{
     overflow: hidden;
     border: 0.1em solid #053870;
     border-radius: 25px;
-    padding: 1.8em;
-    font-size: 2em;
-    margin-top: 0.5em;
+    padding: 4%;
+    margin: 0.5em 0 0.5em 0;
     box-shadow: 15px 15px 8px #053870;
 }
- .input{
-    font-size:18px;
-    height:32px;
-    width:260px;
-    margin: 0 5% 5% 5%;
-} 
 .filtro{
     display: flex;
     flex-direction: row;
     margin: 0 0 2% 0;
     align-items: center;
-
 }
-.filtro>input{
-    margin-top: 5%;
+#inpFiltro, #selMes, #selSemana,#inpData{
+    color: white;
+    background: rgba(69,77,85, 0.5);
+}
+.labData{
+    margin: 2% 1% 0 0;
+}
+.filtrobotao{
+    background: white;
+    border-radius: .25rem .0rem .0rem .25rem;
+    border-color: white;
+    color: rgba(34,84,168);
+}
+.filtrobotao:hover,.filtrobotao:focus{
+    background: rgba(34,84,168);
+    color: white; 
 }
 .labelcheckbox{
-    color:white;
-    font-size: 100%;
+    color: white;
 }
 
-/*.container-radio-icon{
-    display: flex;
-    flex-direction: row;
-}
-.container-status{
-    margin-left: 25%;
-    display: flex;
-    flex-direction: column-reverse;
-}*/
-/* #title{
-    color: rgb(194, 194, 3);
-    font-size: 30px;
-    text-align: center;
-    background-color: #1400ab;
-    padding: 20px;
-    font-family: Arial, Helvetica, sans-serif;
-}  */
+@media (max-width: 575.98px) {
+    .cabecalho h1{
+        font-size: 95%;
+        color: red;
+    }
+    .labData,.labSemana,.labMes,.filtrobotao {
+        font-size: 60%;
+        padding: .375rem .35rem;
+    }
+    #selSemana,#selMes{
+        font-size: 70%;
+        text-align: center;
+        text-align-last: center;
+        padding: 0;
+    }
+    #inpFiltro,#selSemana,#selMes,#inpData{
+        font-size: 60%;
+    }
 
-/*
-#chart_div{
-    position: absolute;
-    left: 38%;
+    #inpData{
+        margin-top: 0.7%;
+        padding: .375rem .05rem;
+    }
+    .labelcheckbox{
+        font-size: 60%;
+    } 
 }
-*/
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .cabecalho h1{
+        font-size: 110%;
+        color: orange;
+    }
+    .labData,.labSemana,.labMes,.filtrobotao {
+        font-size: 60%;
+        padding: .375rem .35rem;
+    }
+    #selSemana,#selMes{
+        font-size: 70%;
+        text-align: center;
+        text-align-last: center;
+        padding: 0;
+    }
+    #inpFiltro,#selSemana,#selMes,#inpData{
+        font-size: 60%;
+    }
+
+    #inpData{
+        margin-top: 0.7%;
+        padding: .375rem .05rem;
+    }
+    .labelcheckbox{
+        font-size: 70%;
+    } 
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .cabecalho h1{
+        font-size: 135%;
+        color: yellowgreen;
+    }
+    .labData,.labSemana,.labMes,.filtrobotao {
+        font-size: 70%;
+        padding: .375rem .35rem;
+    }
+    #selSemana,#selMes{
+        font-size: 70%;
+        text-align: center;
+        text-align-last: center;
+        padding: 0;
+    }
+    #inpFiltro,#selSemana,#selMes,#inpData{
+        font-size: 70%;
+    }
+    #inpData{
+        margin-top: 0.5%;
+        padding: .375rem .05rem;
+    }
+    .labelcheckbox{
+        font-size: 70%;
+    } 
+}
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .cabecalho h1{
+        font-size: 150%;
+        color: purple;
+    }
+    #selSemana,#selMes{
+        text-align: center;
+        text-align-last: center;
+        
+    }
+    #inpData{
+        padding: .375rem .15rem;
+        margin-top: 0.5%;   
+    }
+    .labelcheckbox{
+        font-size: 80%;
+    }
+}
+@media (min-width: 1200px) {
+    .cabecalho h1{
+        font-size: 200%;
+        color: lightskyblue;
+    }
+    #selSemana,#selMes{
+        text-align: center;
+        text-align-last: center;
+        
+    }
+    #inpData{
+        margin-top: 0.5%;
+    }
+    .labelcheckbox{
+        font-size: 80%;
+    }
+}

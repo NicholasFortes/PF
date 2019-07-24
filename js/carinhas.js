@@ -2,7 +2,7 @@ function changeDefault(){
     document.querySelector("#feliz").src = 'img/feliz.png';
     document.querySelector("#normal").src = 'img/normal.png';
     document.querySelector("#triste").src = 'img/triste.png';
-}
+  }
 
 function change1(){
     changeDefault()

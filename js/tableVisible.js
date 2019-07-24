@@ -1,5 +1,5 @@
 var tbody = document.querySelector("tbody")
-var input = document.querySelector("#inputFiltro")
+var input = document.querySelector("#inpFiltro")
 
 input.addEventListener("input",function(){
     

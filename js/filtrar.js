@@ -1,7 +1,7 @@
 function filter(){
     var input, filter, table, tr, td, cell, i, j;
-    input = document.getElementById("inputFiltro")
-    filter = input.value.toUpperCase()
+	filter = document.getElementById("inputFiltro").value.toUpperCase();
+	console.log(filter);
     table = document.getElementById("tabela")
 	tr = table.getElementsByTagName("tr")
 	dados = document.querySelectorAll(".dados")

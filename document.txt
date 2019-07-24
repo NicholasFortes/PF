@@ -1,0 +1,4 @@
+1 - tbody invisivel ao carregar a página
+2 - ao digitar no input deixar o tbody visivel com os resultados filtrados
+3 - ao apagar o que foi digitado fazer com que o tbody fique invisivel novamente
+

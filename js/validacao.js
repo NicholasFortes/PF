@@ -1,6 +1,4 @@
 function validacao() {
-    var botaoSubmit = document.getElementById("botaoSubmit")
-    
 	event.preventDefault()
 	if (document.form1.satisfacao[0].checked == false 
     && document.form1.satisfacao[1].checked == false
