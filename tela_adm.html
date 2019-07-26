@@ -39,8 +39,8 @@
                 <div class="input-group-prepend">
                     <label class="input-group-text labMes" for="selMes">Mês</label>
                 </div>
-                <select class="custom-select" id="selMes" onchange="filter2()">
-                    <option selected value="0"></option>
+                <select class="custom-select" id="selMes">
+                    <option selected value="00"></option>
                     <option value="01">Janeiro</option>
                     <option value="02">Fevereiro</option>
                     <option value="03">Março</option>
@@ -50,9 +50,9 @@
                     <option value="07">Julho</option>
                     <option value="08">Agosto</option>
                     <option value="09">Setembro</option>
-                    <option value="010">Outubro</option>
-                    <option value="011">Novembro</option>
-                    <option value="012">Dezembro</option>
+                    <option value="10">Outubro</option>
+                    <option value="11">Novembro</option>
+                    <option value="12">Dezembro</option>
                 </select>
             </div>
         </div>
@@ -61,12 +61,12 @@
                 <div class="input-group-prepend">
                     <label class="input-group-text labSemana" for="selSemana">Semana</label>
                 </div>
-                <select class="custom-select" id="selSemana" onchange="filter2()">
+                <select class="custom-select" id="selSemana">
                     <option selected value="0"></option>
-                    <option value="1">Semana 1</option>
-                    <option value="2">Semana 2</option>
-                    <option value="3">Semana 3</option>
-                    <option value="4">Semana 4</option>
+                    <option value="1">1ª Semana</option>
+                    <option value="2">2ª Semana</option>
+                    <option value="3">3ª Semana</option>
+                    <option value="4">4ª Semana</option>
                 </select>
             </div>
         </div>
@@ -115,6 +115,10 @@
         </div>
         </div>
         <div class="divtabela container">
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="Mostrar" id="checkVisual">
+                <label class="form-check-label labelcheckbox" for="checkVisual">Visualizar Todos</label>
+            </div>
             <table class="table table-striped table-hover table-dark" id="tabela">
                 <tbody>
                     <thead>
@@ -312,6 +316,7 @@
     <script type="text/javascript" src="js/tableVisible.js"></script>
     <script type="text/javascript" src="js/filtroEspecifico.js"></script>
     <script type="text/javascript" src="js/filtrar2.js"></script>
+    <script type="text/javascript" src="js/formData.js"></script>
     <script src="js/getJson.js"></script>
 </body>
 </html>'

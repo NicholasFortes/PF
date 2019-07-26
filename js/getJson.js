@@ -1,5 +1,5 @@
 var request = new XMLHttpRequest()
-request.open("GET","https://api.myjson.com/bins/nqu95")
+request.open("GET","https://api.myjson.com/bins/8jq9l")
 request.onload = function(){
     var dados = JSON.parse(request.responseText)
     renderPeriodo(dados)

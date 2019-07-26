@@ -74,7 +74,7 @@ body{
 @media (max-width: 575.98px) {
     .cabecalho h1{
         font-size: 95%;
-        color: red;
+        
     }
     .labData,.labSemana,.labMes,.filtrobotao {
         font-size: 60%;
@@ -101,7 +101,7 @@ body{
 @media (min-width: 576px) and (max-width: 767.98px) {
     .cabecalho h1{
         font-size: 110%;
-        color: orange;
+        
     }
     .labData,.labSemana,.labMes,.filtrobotao {
         font-size: 60%;
@@ -128,7 +128,6 @@ body{
 @media (min-width: 768px) and (max-width: 991.98px) {
     .cabecalho h1{
         font-size: 135%;
-        color: yellowgreen;
     }
     .labData,.labSemana,.labMes,.filtrobotao {
         font-size: 70%;
@@ -154,7 +153,6 @@ body{
 @media (min-width: 992px) and (max-width: 1199.98px) {
     .cabecalho h1{
         font-size: 150%;
-        color: purple;
     }
     #selSemana,#selMes{
         text-align: center;
@@ -172,7 +170,6 @@ body{
 @media (min-width: 1200px) {
     .cabecalho h1{
         font-size: 200%;
-        color: lightskyblue;
     }
     #selSemana,#selMes{
         text-align: center;

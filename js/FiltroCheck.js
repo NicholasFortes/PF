@@ -1,71 +1,73 @@
 var checkbox=document.querySelector('.divcheckboxes');
-var tabela=document.querySelector('.divtabela');
+var teste=document.querySelector('.divtabela');
 var button=document.querySelector('.filtrobotao');
+
 button.addEventListener("click",function(event){
-    checkSize(window.innerWidth,checkbox,tabela);
+    checkSize(window.innerWidth,checkbox,teste);
     event.preventDefault();
 });
 
-function checkSize(size,checkbox,tabela){
+function checkSize(size,checkbox,teste){
     var visivel = checkbox.classList.contains("invisivel");
     if (size<=576){
         if (visivel){
             checkbox.classList.add("visivel","col-2");
             checkbox.classList.remove("invisivel");
-            tabela.classList.add("col-10");
+            teste.classList.add("col-10");
         }
         else{
             checkbox.classList.remove("visivel","col-2","col-1");
             checkbox.classList.add("invisivel");
-            tabela.classList.remove("col-10","col-11");
+            teste.classList.remove("col-10","col-11");
         }
     }   
     else if (size<=768){
         if (visivel){
             checkbox.classList.add("visivel","col-2");
             checkbox.classList.remove("invisivel");
-            tabela.classList.add("col-10");
+            teste.classList.add("col-10");
         }
         else{
             checkbox.classList.remove("visivel","col-2","col-1");
             checkbox.classList.add("invisivel");
-            tabela.classList.remove("col-10","col-11");
+            teste.classList.remove("col-10","col-11");
         }
     }
     else if (size<=992){
         if(visivel){
             checkbox.classList.add("visivel","col-1");
             checkbox.classList.remove("invisivel");
-            tabela.classList.add("col-11");
+            teste.classList.add("col-10");
         }
         else{
             checkbox.classList.remove("visivel","col-2","col-1");
             checkbox.classList.add("invisivel");
-            tabela.classList.remove("col-10","col-11");
+            teste.classList.remove("col-10","col-11");
         }
     }
     else if (size<=1200){
         if (visivel){
             checkbox.classList.add("visivel","col-1");
             checkbox.classList.remove("invisivel");
-            tabela.classList.add("col-11");
+            teste.classList.add("col-11");
         }
         else{
             checkbox.classList.remove("visivel","col-2","col-1");
             checkbox.classList.add("invisivel");
-            tabela.classList.remove("col-10","col-11");
+            teste.classList.remove("col-10","col-11");
         }
     }
     else{
         if (visivel){
             checkbox.classList.add("visivel","col-1");
             checkbox.classList.remove("invisivel");
-            tabela.classList.add("col-11");
+            teste.classList.add("col-11");
         }
         else{
+            teste.classList.remove("col-10","col-11");
             checkbox.classList.remove("visivel","col-2","col-1");
             checkbox.classList.add("invisivel");
-            tabela.classList.remove("col-10","col-11");
+            
         }
     }
 }

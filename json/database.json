@@ -1,182 +1,76 @@
 [
     {
-        "periodo":"01/01/2019 - 08/01/2019",
-        "gestor":"Martim Ribeiro",
-        "nome":"Lucas Azevedo",
-        "sede":"Passo Fundo - RS",
-        "cliente":"FYI",
-        "email":"martimr@gmail.com",
-        "status":"Em andamento",
-        "satisPess":"Satisfeito",
-        "satisProf":"Com uma observação",
-        "comentario":"N/A",
-        "solucao":"Particionar melhor o Projeto.",
-        "dataSub":"08/01/2019"
+        "periodo": "01/01/2019 - 08/01/2019",
+        "gestor": "Martim Ribeiro",
+        "nome": "Lucas Azevedo",
+        "sede": "Passo Fundo - RS",
+        "cliente": "FYI",
+        "email": "martimr@gmail.com",
+        "status": "Em andamento",
+        "satisPess": "Satisfeito",
+        "satisProf": "Com uma observação",
+        "comentario": "N/A",
+        "solucao": "Particionar melhor o Projeto.",
+        "dataSub": "08/01/2019"
     },
-
+    
     {
-        "periodo":"04/02/2019 - 11/02/2019",
-        "gestor":"Vitor Costa",
-        "nome":"Nicolas Melo",
-        "sede":"Porto Alegre - RS",
-        "cliente":"Off Premium",
-        "email":"vitorc@gmail.com",
-        "status":"Concluído",
-        "satisPess":"Satisfeito",
-        "satisProf":"Satisfeito",
-        "comentario":"N/A",
-        "solucao":"N/A",
-        "dataSub":"11/02/2019"
-	},
-	
-    {
-        "periodo":"04/03/2019 - 11/03/2019",
-        "gestor":"Miguel Almeida",
-        "nome":"Rodrigo Carvalho",
-        "sede":"Passo Fundo - RS",
-        "cliente":"Bob Store",
-        "email":"miguela@gmail.com",
-        "status":"Concluído",
-        "satisPess":"Satisfeito",
-        "satisProf":"Satisfeito",
-        "comentario":"N/A",
-        "solucao":"N/A",
-        "dataSub":"11/03/2019"
+        "periodo": "08/01/2019 - 15/01/2019",
+        "gestor": "Vitor Costa",
+        "nome": "Nicolas Melo",
+        "sede": "Porto Alegre - RS",
+        "cliente": "Off Premium",
+        "email": "vitorc@gmail.com",
+        "status": "Concluído",
+        "satisPess": "Satisfeito",
+        "satisProf": "Satisfeito",
+        "comentario": "N/A",
+        "solucao": "N/A",
+        "dataSub": "15/01/2019"
     },
-            
+    
     {
-                
-        "periodo":"01/04/2019 - 08/04/2019",
-        "gestor":"Bruno Goncalves",
-        "nome":"Fábio Dias",
-        "sede":"São Paulo - SP",
-        "cliente":"Salinas",
-        "email":"brunog@gmail.com",
-        "status":"Não Solucionado",
-        "satisPess":"Com uma observação",
-        "satisProf":"Não Satisfeito",
-        "comentario":"N/A",
-        "solucao":"Manutenção do ar-condicionado.",
-        "dataSub":"08/04/2019"
-	},
-	
+        "periodo": "15/01/2019 - 22/01/2019",
+        "gestor": "Miguel Almeida",
+        "nome": "Rodrigo Carvalho",
+        "sede": "Passo Fundo - RS",
+        "cliente": "Bob Store",
+        "email": "miguela@gmail.com",
+        "status": "Concluído",
+        "satisPess": "Satisfeito",
+        "satisProf": "Satisfeito",
+        "comentario": "N/A",
+        "solucao": "N/A",
+        "dataSub": "22/01/2019"
+    },
+    
     {
-        "periodo":"13/05/2019 - 20/05/2019",
-        "gestor":"Marcos Costa",
-        "nome":"Pedro Lima",
-        "sede":"Passo Fundo - RS",
-        "cliente":"Lojas Renner",
-        "email":"marcosc@gmail.com",
-        "status":"Concluído",
-        "satisPess":"Satisfeito",
-        "satisProf":"Satisfeito",
-        "comentario":"N/A",
-        "solucao":"N/A",
-        "dataSub":"20/05/2019"
-	},
-	
+        "periodo": "22/01/2019 - 29/01/2019",
+        "gestor": "Bruno Goncalves",
+        "nome": "Fábio Dias",
+        "sede": "São Paulo - SP",
+        "cliente": "Salinas",
+        "email": "brunog@gmail.com",
+        "status": "Não Solucionado",
+        "satisPess": "Com uma observação",
+        "satisProf": "Não Satisfeito",
+        "comentario": "N/A",
+        "solucao": "Manutenção do ar-condicionado.",
+        "dataSub": "29/01/2019"
+    },
+    
     {
-        "periodo":"10/06/2019 - 17/06/2019",
-        "gestor":"Túlio Gabriel",
-        "nome":"Paulo Pereira",
-        "sede":"Passo Fundo - RS",
-        "cliente":"Off Premium",
-        "email":"paulop@compasso.com.br",
-        "status":"Concluído",
-        "satisPess":"Não Satisfeito",
-        "satisProf":"Satisfeito",
-        "comentario":"N/A",
-        "solucao":"N/A",
-        "dataSub":"17/06/2019"
-	},
-	
-    {
-    "periodo":"15/07/2019 - 22/07/2019",
-        "gestor":"Gustavo Sanchez",
-        "nome":"Pedro Lima",
-        "sede":"Passo Fundo - RS",
-        "cliente":"Lojas Renner",
-        "email":"marcosc@compasso.com.br",
-        "status":"Concluído",
-        "satisPess":"Satisfeito",
-        "satisProf":"Satisfeito",
-        "comentario":"N/A",
-        "solucao":"N/A",
-        "dataSub":"22/07/2019"
-	},
-	
-    {
-		"periodo":"04/08/2019 - 11/08/2019",
-		"gestor":"Gabriel Batista",
-		"nome":"Pedro Lima",
-		"sede":"Passo Fundo - RS",
-		"cliente":"Vivo",
-		"email":"pedrol@compasso.com.br",
-		"status":"Concluído",
-		"satisPess":"Satisfeito",
-		"satisProf":"Com Uma observação",
-		"comentario":"N/A",
-		"solucao":"N/A",
-		"dataSub":"11/08/2019"
-	},
-	
-    {
-        "periodo":"09/09/2019 - 16/09/2019",
-        "gestor":"Mateus Oliveira",
-        "nome":"Denis Lima",
- 		"sede":"Passo Fundo - RS",
-        "cliente":"Lojas Renner",
-        "email":"gabrielb@compasso.com.br",
-        "status":"Concluído",
-        "satisPess":"Satisfeito",
-        "satisProf":"Satisfeito",
-        "comentario":"N/A",
-        "solucao":"N/A",
-        "dataSub":"16/09/2019"
-	},
-	
-    {
-    	"periodo":"14/10/2019 - 21/10/2019",
-        "gestor":"Vinicius Silva",
-    	"nome":"Gabriel Ramos",
-        "sede":"Passo Fundo - RS",
-        "cliente":"Salinas",
-        "email":"viniciusr@compasso.com.br",
-        "status":"Concluído",
-        "satisPess":"Satisfeito",
-        "satisProf":"Satisfeito",
-        "comentario":"N/A",
-        "solucao":"N/A",
-        "dataSub":"21/10/2019"
-	},
-	
-    {
-		"periodo":"11/11/2019 - 18/11/2019",
-		"gestor":"Felipe Borges",
-		"nome":"Walter Silva",
-		"sede":"Passo Fundo - RS",
-		"cliente":"FYI",
-		"email":"walter@compasso.com.br",
-		"status":"Concluído",
-		"satisPess":"Satisfeito",
-		"satisProf":"Satisfeito",
-		"comentario":"N/A",
-		"solucao":"N/A",
-		"dataSub":"18/11/2019"
-	},
-
-	{
-		"periodo":"16/12/2019 - 23/12/2019",
-		"gestor":"Marcio Ferreira",
-		"nome":"Joel Claudio",
-		"sede":"Porto Alegre - RS",
-		"cliente":"Lojas Renner",
-		"email":"joel@compasso.com.br",
-		"status":"Concluído",
-		"satisPess":"Satisfeito",
-		"satisProf":"Satisfeito",
-		"comentario":"N/A",
-		"solucao":"N/A",
-		"dataSub":"23/09/2019"
-	}
+        "periodo": "29/01/2019 - 05/02/2019",
+        "gestor": "Marcos Costa",
+        "nome": "Pedro Lima",
+        "sede": "Passo Fundo - RS",
+        "cliente": "Lojas Renner",
+        "email": "marcosc@gmail.com",
+        "status": "Concluído",
+        "satisPess": "Satisfeito",
+        "satisProf": "Satisfeito",
+        "comentario": "N/A",
+        "solucao": "N/A",
+        "dataSub": "04/02/2019"
+    }
 ]
