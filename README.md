@@ -2,4 +2,4 @@
 
 Final Project of my Internship at Compass UOL Passo Fundo
 
-- It Consists of a Weekly Feedback Survey for the intern workers of the company
+- It Consists of a Weekly Feedback Survey for the workers of the company
